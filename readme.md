@@ -1,4 +1,6 @@
-# React scaffold using ES5 and no JSX for cordova apps
+# React scaffold for Cordova apps
+
+Using Redux, ES5 and no JSX.
 
 Requires
 
