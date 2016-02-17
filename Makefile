@@ -2,7 +2,13 @@ watch:
 	modd
 
 js:
-	cat app/namespace.js `find app/lib -iname '*.js'` app/main.js > assets/js/bundle.js
+	cat \
+		node_modules/react/dist/react.js \
+		node_modules/react-dom/dist/react-dom.js \
+		node_modules/redux/dist/redux.js \
+		node_modules/page/page.js \
+		assets/bower_components/lodash/dist/lodash.min.js \
+		app/namespace.js `find app/lib -iname '*.js'` app/main.js > assets/js/bundle.js
 
 sass:
 	sass sass/main.sass > assets/css/bundle.css
@@ -28,7 +34,6 @@ init-cordova:
 
 android:
 	cp -rf assets cordova/www
-	cp -rf node_modules cordova/www
 	cp -rf index.html cordova/www
 	cd cordova && \
 	cordova build android
