@@ -32,7 +32,7 @@ init-cordova:
 	cordova platform add browser && \
 	cordova platform add android
 
-android:
+android: assets
 	cp -rf assets cordova/www
 	cp -rf index.html cordova/www
 	cd cordova && \
