@@ -10,6 +10,5 @@ window.el = React.createElement;
 window.App = {
 	Components: {},
 	Stores: {},
-	Actions: {},
 	Config: {},
 };

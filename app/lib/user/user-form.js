@@ -13,7 +13,7 @@ App.Components.UserForm = React.createClass({
 
 	onInput(e) {
 		App.Stores.UserStore.dispatch({
-			type: App.Actions.User.UPDATE,
+			type: "UPDATE",
 			user: {
 				firstname: this.refs.firstname.value,
 				lastname: this.refs.lastname.value,
