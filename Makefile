@@ -28,6 +28,7 @@ init-cordova:
 
 android:
 	cp -rf assets cordova/www
+	cp -rf node_modules cordova/www
 	cp -rf index.html cordova/www
 	cd cordova && \
 	cordova build android
