@@ -13,7 +13,7 @@ App.Components.ItemsIndex = React.createClass({
 		this.unsubscribe();
 	},
 
-	render() {
+	render: function() {
 		return el(
 			"h2", null, "Item index for user ", this.state.user.firstname, " ", this.state.user.lastname
 		);

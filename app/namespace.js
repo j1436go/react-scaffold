@@ -1,3 +1,4 @@
+"use strict";
 // The namespace will be created first.
 // All other .js files instead of main.js will be
 // executed in any order.

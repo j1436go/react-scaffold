@@ -13,7 +13,7 @@ App.Components.UserDisplay = React.createClass({
 		this.unsubscribe();
 	},
 
-	render() {
+	render: function() {
 		return el(
 			"table", null,
 				el("thead", null,

@@ -3,11 +3,11 @@ App.Components.Items = React.createClass({
 		return { items: [{name: "Foo"}, {name: "Bar"}] };
 	},
 
-	componentDidMount() {
+	componentDidMount: function() {
 		this.fetchData();
 	},
 
-	fetchData() {
+	fetchData: function() {
 		"https://example.com/api",
 		// Cookies can be set and will be handled natively
 		// by the browser. The Set-Cookie header is not readable.
@@ -21,12 +21,12 @@ App.Components.Items = React.createClass({
 			.catch(function(err) { console.log(err); });
 	},
 
-	tapped(item, i) {
+	tapped: function(item, i) {
 		console.log(item);
 		console.log(i);
 	},
 
-	render() {
+	render: function() {
 		var items = this.state.items.map(function(item, i) {
 			return el(
 				"p", {

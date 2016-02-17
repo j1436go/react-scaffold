@@ -11,7 +11,7 @@ App.Components.UserForm = React.createClass({
 		this.unsubscribe();
 	},
 
-	onInput(e) {
+	onInput: function(e) {
 		App.Stores.UserStore.dispatch({
 			type: "UPDATE",
 			user: {
@@ -21,12 +21,12 @@ App.Components.UserForm = React.createClass({
 		});
 	},
 
-	submitted(e) {
+	submitted: function(e) {
 		e.preventDefault();
 		console.log(App.Stores.UserStore.getState());
 	},
 
-	render() {
+	render: function() {
 		return (
 			el("form", {
 			action: "handler",
