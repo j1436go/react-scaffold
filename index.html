@@ -1,0 +1,26 @@
+<!doctype html public="storage">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>App</title>
+	<link rel="stylesheet" href="assets/bower_components/ratchet/dist/css/ratchet.min.css">
+	<link rel="stylesheet" href="assets/css/bundle.css">
+</head>
+<body>
+	<div id=app></div>
+
+	<script src="node_modules/react/dist/react.js"></script>
+	<script src="node_modules/react-dom/dist/react-dom.js"></script>
+	<script src="node_modules/redux/dist/redux.js"></script>
+	<script src="node_modules/page/page.js"></script>
+	<script src="assets/bower_components/lodash/dist/lodash.min.js"></script>
+
+	<script src="assets/js/bundle.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		ReactDOM.render(
+			el(App.Components.App),
+			document.getElementById("app")
+		);
+	</script>
+</body>
+</html>
